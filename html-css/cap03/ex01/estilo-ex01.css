@@ -1,0 +1,31 @@
+body{
+            /* Background é o fundo.*/
+            /* A maneira abaixo é iniciante */
+            background-color: #fff6d8; 
+            background-image: url(cabecalhos_back.png);
+            background-repeat: repeat-y;
+            
+            /* Agora a maneira profissional. A mesma execução porém em uma linha */
+            background: #fff6d8 url(cabecalhos_back.png) repeat-y; 
+            margin-left: 160px; /*Para ajustar a margem */
+        }
+
+        h1, h3{
+            color: #906718;
+        }
+
+        hr{
+            border-color: #906718; /* Inserir cor */
+            border-style: dashed; /* Tipo da linha */
+            border-width: 1.5px; /* Expessura da linha */
+        }
+
+        h2{
+            color:  white; /* Cor do título */
+            background-color: #d48b00; /*Cor do fundo de destaque do titulo */
+            padding: 3px; /* Ajustar o tamanho do destaque. Funciona do centro para fora a expansão */
+        }
+
+        p{
+            text-indent: 30px;
+        }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+    <style>
+        body {
+            width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            background-color: #000;
+            color: #fff;
+            border-bottom: solid #c4d6a8 5px;
+            margin-top: 0;
+        }
+
+        header figure {
+            margin-bottom: 0;
+        }
+
+        nav {
+            width: 150px;
+            float: left;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: solid thin;
+
+        }
+
+        nav ul li:last-of-type {
+            border-bottom: solid thin;
+        }
+
+        main {
+            width: 640px;
+            margin: auto;
+            float: left;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-align: justify;
+        }
+
+        main img{
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        main h1{
+            border-bottom: solid;
+            margin-bottom: 0;
+        }
+
+        main h2{
+            border-bottom: solid;
+            text-align: right;
+            margin-top: 0;
+        }
+
+        aside {
+            width: 150px;
+            float: right;
+        }
+
+        article h2{
+            border-bottom: solid thin #c4d6a8;
+            margin-bottom: 0;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            border-bottom: solid #c4d6a8 5px;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        #citacao{
+            font-style: italic;
+            width: 190px;
+        }
+
+        .hora{
+            color: #c4d6a8;
+            text-align: right;
+            margin-top: 0;
+        }
+
+        .link{
+            color: #900;
+            text-decoration: none;
+            text-align: right;
+            display: block;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <a href="../../../../index.html">Home Principal</a>
+    <br>
+    <a href="../../../../cap05.html">Home -  Capitulo 5</a>
+    <header>
+        <figure>
+            <img src="vista1.JPG" alt="vista 1">
+            <img src="vista4.JPG" alt="vista 4">
+            <img src="vista5.JPG" alt="vista 5">
+            <img src="vista2.JPG" alt="vista 2">
+            <img src="vista3.JPG" alt="vista 3">
+        </figure>
+
+        <div>
+            <h1>Portal da Floresta</h1>
+            <hr>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="link1.html" target="_self">link 1</a></li>
+            <li><a href="link2.html" target="_self">link 2</a></li>
+            <li><a href="link3.html" target="_self">link 3</a></li>
+            <li><a href="link4.html" target="_self">link 4</a></li>
+            <li><a href="link5.html" target="_self">link 5</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Título Principal</h1>
+        <h2>autor e data</h2>
+        <p id="citacao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae varius nunc.</p>
+        <p><img src="escada.jpg" alt="detalhe interno" />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae varius nunc. Aliquam sed nulla urna,
+            porta porttitor libero. Duis molestie rhoncus neque, quis posuere turph2is congue non. In mattis, turpis ac
+            rhoncus ultrices, nisl lacus fermentum lectus, in vulputate purus erat in nisl. Phasellus tristique, nunc et
+            eleifend viverra, felis dolor sollicitudin nunc, et semper nisi magna id elit. Sed nulla turpis, tempus
+            vitae rhoncus et, iaculis at est. Aliquam erat volutpat. Nullam orci eros, volutpat in congue vitae, ornare
+            ut felis. Sed venenatis lorem non arcu venenatis a placerat leo ullamcorper. Ut imperdiet pharetra mi ac
+            sagittis. Mauris a nibh massa. Morbi consequat faucibus velit vel viverra. Donec quis nulla in sem rutrum
+            accumsan nec et ipsum. Praesent viverra est at tortor euismod at interdum augue interdum.</p>
+    </main>
+
+    <aside>
+        <article>
+            <h2>notícia1</h2>
+            <p class="hora">00h00 / 01.01</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae varius nunc. <a class="link" href="#">» leia
+                    mais</a></p>
+        </article>
+        <article>
+            <h2>notícia 2</h2>
+            <p class="hora">00h00 / 01.01</p>
+            <p>Aenean ut massa et erat sagittis fringilla vel sed nibh. Sed lacinia volutpat consectetur. <a class="link" href="#">»
+                    outras</a></p>
+        </article>
+        <article>
+            <h2>notícia 3</h2>
+            <p class="hora">00h00 / 01.01</p>
+            <p>Fusce tempor sapien at nunc congue cursus. Aenean lacus felis, volutpat. <a class="link" href="#"> » siga o
+                    exemplo</a></p>
+        </article>
+    </aside>
+
+    <footer>
+        <p>Rua Vitae Rhoncus, 123 - São Paulo, SP - 01234-000 - 11 1234.5678</p>
+    </footer>
+
+</body>
+
+</html>

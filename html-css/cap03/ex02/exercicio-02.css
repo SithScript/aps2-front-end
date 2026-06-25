@@ -1,0 +1,24 @@
+body{  /* Body é para alterar o corpo todo do css */
+    width: 960px;
+    text-align: justify;
+    margin: auto;
+}
+h1{
+            color: #764e36;
+            border-top: solid;
+            border-bottom: solid;
+        }
+
+        h2{
+            color: #fff;
+            background-color: #764e36;
+            padding: 3px;
+
+        }
+        img{
+            border: #764e36;
+            border-style: solid;
+            padding: 3px;
+        }
+
+        

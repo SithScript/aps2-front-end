@@ -1,0 +1,6 @@
+Dados técnicos do equipamento
+modelo	altura	largura	acessórios
+USB	WI-FI
+Xk-7	20	20	sim	nao
+WZ8	10	15	nao	nao
+X15	30	30	sim	sim

@@ -1,0 +1,30 @@
+table {
+    background-color: white;
+    font-family: Arial;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+thead {
+    text-transform: uppercase;
+}
+
+th {
+    background-color: #01316a;
+    color: white;
+    padding: 2%;
+    border-color: white;
+}
+
+td {
+    border-color: #01316a;
+    border-style: solid;
+}
+
+img {
+    padding: 2px;
+    
+}

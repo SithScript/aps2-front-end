@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link 2</title>
+</head>
+<body>
+    <a href="../../../index.html">Home Principal</a>
+    <br>
+    <a href="../../../cap03.html">Home - Capitulo 03</a>
+
+    <style>
+
+        h2{
+            background-color: #7faeb7;
+        }
+        
+        hr{
+            border: solid #7faeb7;
+        }
+
+        p a:link{
+            text-decoration: none;
+            color: #7faeb7;
+            font-weight: bold;
+        }
+
+        p a:visited{
+            color: #c9e0e5;
+        }
+
+        p a:hover{
+            color: #ffa700;
+        }
+
+        img:hover{  /* QUando o mouse passa pelos botões aparece uma moldura. Começa aqui */
+            border: #ffa700 solid 3px;
+        }
+
+        /* Primeira maneira usando first-of-type */
+      /*  a:first-of-type img:hover{ 
+            border-radius: 25px 0 0 25px;
+        } */
+
+        /* Segunda maneira usando nth-child  */
+        a:nth-child(1) img:hover{
+            border-radius: 25px 0 0 25px;
+        }
+
+      /*  a:last-of-type img:hover{
+            border-radius: 0 25px 25px 0;
+        } */
+
+        a:nth-child(3) img:hover{
+            border-radius: 0 25px 25px 0;
+        } /* A moldura termina aqui. Foram colocadas duas formas de faze-las */
+
+
+    </style>
+    
+<h1>Página 02</h1>
+
+<h2>Trabalhando com links</h2>
+<p><a href="links1.html">Ir para a pag link 1</a></p>
+<p><a href="https://www.sp.senac.br/" target="_blank">Senac Sao Paulo</a></p>
+<p><a href="mailto:analauragomes@gmail.com">mande sua mensagem (analauragomes@gmail.com) </a></p>
+
+<hr>
+
+<h2>Trabalhando com links em imagens</h2>
+
+<p>
+    <a href="links1.html"><img src="btn1.png" alt="ir para a pagina 1"></a>  
+    <a href="https://www.sp.senac.br/" target="_blank"><img src="btn2.png" alt="site do senac são paulo"></a>
+    <a href="mailto:analauragomes@gmail.com"><img src="btn3.png" alt="contato:analauragomes@gmail.com"></a>
+</p>
+
+</body>
+</html>
+
