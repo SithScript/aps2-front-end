@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214; /* Cor de fundo escura */
+    color: #e1e1e6; /* Cor do texto claro */
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a[href="index.html"] {
+    align-self: flex-start; /* Alinha o botao Home a esquerda */
+    text-decoration: none;
+    background-color: #202024;
+    color: #a8a8b3;
+    padding: 8px 16px;
+    border: 1px solid #29292e;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 30px; /* Espaco maior abaixo do botao Home */
+}
+
+a[href="index.html"]:hover {
+    background-color: #29292e;
+    color: #e1e1e6;
+    border-color: #4da6ff; /* Muda a borda do Home para azul no mouse */
+}
+
+fieldset {
+    border: 1px solid #29292e; /* Borda sutil para o bloco de nota */
+    border-radius: 12px;
+    background-color: #202024; /* Fundo ligeiramente mais claro que o body */
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 600px; /* Limita a largura maxima do bloco */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Sombra suave ao redor do bloco */
+}
+
+fieldset h1 {
+    font-size: 1.8rem;
+    color: #3de0a1; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #121214; /* Linha divisoria abaixo do titulo */
+    padding-bottom: 10px;
+}
+
+fieldset p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Melhora o espacamento entre as linhas do texto */
+    color: #a8a8b3; /* Cor cinza clara para leitura confortavel */
+    margin: 0;
+    text-align: justify; /* Alinha o texto perfeitamente nas laterais */
+}

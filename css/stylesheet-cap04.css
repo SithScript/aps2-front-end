@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214; /* Cor de fundo escura */
+    color: #e1e1e6; /* Cor do texto claro */
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #4da6ff; /* Cor azul do titulo principal */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    border-bottom: 1px solid #29292e; /* Linha sutil abaixo do titulo */
+    padding-bottom: 15px;
+}
+
+a[href="index.html"] {
+    align-self: flex-start; /* Alinha o botao Home a esquerda */
+    text-decoration: none;
+    background-color: #202024;
+    color: #a8a8b3;
+    padding: 8px 16px;
+    border: 1px solid #29292e;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+}
+
+a[href="index.html"]:hover {
+    background-color: #29292e;
+    color: #e1e1e6;
+    border-color: #4da6ff; /* Muda a borda do Home para azul no mouse */
+}
+
+ol, ul {
+    list-style: none; /* Remove os numeros ou bolinhas padrao da lista */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaco entre cada item da lista */
+    counter-reset: meu-contador; /* Cria um contador do CSS para os numeros */
+}
+
+ol li, ul li {
+    counter-increment: meu-contador; /* Incrementa o numero para cada item */
+}
+
+ol li a, ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: #202024; /* Fundo do botao da atividade */
+    color: #4da6ff; /* Forca a cor azul mesmo se o link ja foi visitado */
+    padding: 14px 18px;
+    border: 1px solid #29292e;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Adiciona o numero estilizado antes do texto do link */
+ol li a::before {
+    content: counter(meu-contador) ". ";
+    color: #3de0a1; 
+    margin-right: 8px;
+}
+
+/* Garante que o link nao fique roxo depois de clicado */
+ol li a:visited, ul li a:visited {
+    color: #4da6ff;
+}
+
+ol li a:hover, ul li a:hover {
+    background-color: #4da6ff;
+    color: #121214 !important; /* Inverte o texto para a cor escura no mouse */
+    border-color: #4da6ff;
+    transform: translateX(5px); /* Move o botao levemente para a direita */
+    box-shadow: 0 4px 12px rgba(77, 166, 255, 0.2); /* Sombra azul brilhante */
+}
+
+/* Garante que o numero tambem mude de cor no mouse */
+ol li a:hover::before {
+    color: #121214;
+}

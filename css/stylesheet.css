@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214; /* Fundo grafite escuro */
+    color: #e1e1e6; /* Texto claro */
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container do Cabeçalho */
+div {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+div h1 {
+    font-size: 1.8rem;
+    color: #4da6ff; /* Azul brilhante para destacar no escuro */
+    margin: 5px 0;
+}
+
+div h1:nth-child(2) {
+    font-size: 1.4rem;
+    color: #a8a8b3; /* Cinza claro para o subtítulo */
+    font-weight: 400;
+}
+
+div h2 {
+    font-size: 1.1rem;
+    color: #3de0a1; 
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* 2. PAINEL DE LINKS (FIELDSET & UL) */
+
+fieldset {
+    border: 1px solid #29292e; /* Borda sutil */
+    border-radius: 12px;
+    background-color: #202024; /* Fundo do painel um pouco mais claro que o body */
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+fieldset h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e1e1e6;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #121214;
+    padding-bottom: 10px;
+}
+
+/* Blocos de botões */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+ul:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Estilização dos Links como Botões */
+ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #29292e; /* Botão escuro */
+    color: #4da6ff; /* Texto azul correspondente */
+    padding: 12px;
+    border: 1px solid #323238;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efeito Hover nos Botões (Destaque quando passa o mouse) */
+ul li a:hover {
+    background-color: #4da6ff;
+    color: #121214; /* Inverte o texto para a cor do fundo */
+    border-color: #4da6ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(77, 166, 255, 0.3);
+}

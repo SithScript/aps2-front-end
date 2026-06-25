@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214; /* Cor de fundo escura */
+    color: #e1e1e6; /* Cor do texto claro */
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #4da6ff; /* Cor azul do titulo principal */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    border-bottom: 1px solid #29292e; /* Linha sutil abaixo do titulo */
+    padding-bottom: 15px;
+}
+
+a[href="index.html"] {
+    align-self: flex-start; /* Alinha o botao Home a esquerda */
+    text-decoration: none;
+    background-color: #202024;
+    color: #a8a8b3;
+    padding: 8px 16px;
+    border: 1px solid #29292e;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+}
+
+a[href="index.html"]:hover {
+    background-color: #29292e;
+    color: #e1e1e6;
+    border-color: #4da6ff; /* Muda a borda do Home para azul no mouse */
+}
+
+ul {
+    list-style: none; /* Remove a bolinha padrao da lista */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaco entre cada item da lista */
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: #202024; /* Fundo do botao da atividade */
+    color: #4da6ff;
+    padding: 14px 18px;
+    border: 1px solid #29292e;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+ul li a:hover {
+    background-color: #4da6ff;
+    color: #121214; /* Inverte o texto para a cor escura no mouse */
+    border-color: #4da6ff;
+    transform: translateX(5px); /* Move o botao levemente para a direita */
+    box-shadow: 0 4px 12px rgba(77, 166, 255, 0.2); /* Sombra azul brilhante */
+}
